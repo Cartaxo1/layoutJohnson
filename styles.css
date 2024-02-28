@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px;
+
+    color: #fff;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 180px;
+}
+
+#icon img{
+    border-radius: 100%;
+    width: 500px;
+}
+
+#icon img:hover {
+    transform: scale(1.1);
+}
+
+#social {
+    filter: url(./images/twitter.png)invert(100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 32px;
+}
+
+#social img {
+    width: 40px;
+    cursor: pointer;
+    margin: 0 16px 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 180px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
+}
+
+#button {
+    display: flex;
+    flex-direction: column;
+    margin: 32px;
+}
+
+#button button {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 20px 80px;
+    margin: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
