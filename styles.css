@@ -10,30 +10,29 @@ body {
     background-size: cover;
     background-position: center;
     font-family: "Hanken Grotesk", sans-serif;
+    background-color: black;
+}
+
+section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 32px;
-
     color: #fff;
+    height: 100vh;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
 }
 
 #icon img{
     border-radius: 100%;
-    width: 500px;
+    max-width: 20rem;
+        width: 100%;
+        height: auto;
 }
 
 #icon img:hover {
@@ -43,28 +42,27 @@ main {
 #social {
     filter: url(./images/twitter.png)invert(100%);
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 32px;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 #social img {
     width: 40px;
     cursor: pointer;
-    margin: 0 16px 0;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 180px;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
     font-size: 48px;
-    margin-bottom: 10px;
 }
 
 p {
@@ -74,7 +72,7 @@ p {
 #button {
     display: flex;
     flex-direction: column;
-    margin: 32px;
+    gap: 1rem;
 }
 
 #button button {
@@ -88,19 +86,25 @@ p {
     font-size: 18px;
 }
 
-@media (max-width: 900px) {
-    body {
-      padding: 8rem;
-    }
-  
-    main {
+@media (max-width: 1020px) {
+    section {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
     }
-    .right {
-        margin: 12px;
+    #icon img {
+        max-width: 10rem;
+        width: 100%;
+        height: auto;
     }
+
+
 }
+
+
 
 
 
