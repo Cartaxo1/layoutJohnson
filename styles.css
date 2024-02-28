@@ -29,7 +29,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 180px;
 }
 
 #icon img{
@@ -87,6 +86,20 @@ p {
     color: #fff;
     cursor: pointer;
     font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    body {
+      padding: 8rem;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    .right {
+        margin: 12px;
+    }
 }
 
 
